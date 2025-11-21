@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="hero-left">
+    <h1>Hi, I'm <span>AMBERKAR SIVA SAI PAVAN</span></h1>
+    <p class="lead">B.Tech CSE (Data Science) | Data Structures & Algorithms | Web Development</p>
+    <p>{{ profile.summary }}</p>
+
+    <div class="quick-contact">
+      <a class="btn" href="mailto:{{ profile.email }}">Email Me</a>
+      <a class="btn btn-outline" href="{{ url_for('projects') }}">See Projects</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <!-- Optional: place profile image in static/assets/profile.jpg -->
+    <img src="{{ url_for('static', filename='assets/profile.jpg') }}" alt="profile" onerror="this.style.display='none'">
+    <div class="info-card">
+      <h3>Contact</h3>
+      <p><strong>Email:</strong> {{ profile.email }}</p>
+      <p><strong>Phone:</strong> {{ profile.phone }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="two-col">
+  <div>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Python</li>
+      <li>C / C++</li>
+      <li>Data Structures & Algorithms</li>
+      <li>HTML / CSS / JavaScript (Basics)</li>
+      <li>Pandas / Data Analysis</li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="edu">
+      <p><strong>2023 – Present</strong> — B.Tech CSE (Data Science), CMR Engineering College (CGPA: 9.00/10)</p>
+      <p><strong>2022</strong> — Class 12, Urbane Junior College (96.3%)</p>
+      <p><strong>2020</strong> — Class 10, Akshara Sree School (GPA: 10/10)</p>
+    </div>
+  </div>
+
+  <div>
+    <h2>Work Experience</h2>
+    <div class="card">
+      <h3>Web Development Intern — Cognifyz Technologies</h3>
+      <p><em>Jun 2025 – Jul 2025</em></p>
+      <ul>
+        <li>Worked on front-end projects using HTML, CSS and JavaScript.</li>
+        <li>Gained hands-on experience and internship completion certificate.</li>
+      </ul>
+    </div>
+
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>Infosys Springboard — Python Certification</li>
+      <li>AI Foundation — Hexart</li>
+      <li>Deloitte — Data Analytics Certification</li>
+    </ul>
+  </div>
+</section>
+{% endblock %}

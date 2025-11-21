@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Projects</h2>
+
+<div class="projects-grid">
+  {% for p in projects %}
+  <div class="project-card">
+    <h3>{{ p.title }}</h3>
+    <small>{{ p.year }}</small>
+    <p>{{ p.desc }}</p>
+    <!-- optionally link to project repo if you add a URL -->
+  </div>
+  {% endfor %}
+</div>
+
+<section class="more">
+  <h3>Other Projects & Coursework</h3>
+  <ul>
+    <li>Calculator CLI App (Python)</li>
+    <li>To-Do List App (JavaScript)</li>
+    <li>News Headlines Scraper (Python & BeautifulSoup)</li>
+    <li>Flask REST API (User Management)</li>
+    <li>Sales Data Analysis with Pandas</li>
+  </ul>
+</section>
+{% endblock %}
