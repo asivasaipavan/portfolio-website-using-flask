@@ -26,4 +26,4 @@ Place these files/folders in the repository root exactly like this:
     ├── base.html
     ├── index.html
     ├── projects.html
-    └── contact.html ''''
+    └── contact.html '''
