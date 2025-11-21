@@ -9,3 +9,17 @@ Shows education, skills, projects, internship experience, certifications, and co
 - Contact form that saves messages to `messages.txt`
 - Responsive design, ready for local hosting or deployment
 
+## 📁 Project Structure
+portfolio_flask/
+├── app.py
+├── messages.txt
+├── README.md
+├── static/
+│ ├── style.css
+│ └── assets/
+│ └── profile.jpg (optional)
+└── templates/
+├── base.html
+├── index.html
+├── projects.html
+└── contact.html
