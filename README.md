@@ -10,16 +10,20 @@ Shows education, skills, projects, internship experience, certifications, and co
 - Responsive design, ready for local hosting or deployment
 
 ## 📁 Project Structure
--portfolio_flask/
--├── app.py
--├── messages.txt
--├── README.md
--├── static/
--│ ├── style.css
--│ └── assets/
--│ └── profile.jpg (optional)
--└── templates/
--├── base.html
--├── index.html
--├── projects.html
--└── contact.html
+
+Place these files/folders in the repository root exactly like this:
+
+portfolio_flask/
+├── app.py
+├── messages.txt
+├── README.md
+├── requirements.txt
+├── static/
+│   ├── style.css
+│   └── assets/
+│       └── profile.png   (placeholder image)
+└── templates/
+    ├── base.html
+    ├── index.html
+    ├── projects.html
+    └── contact.html
