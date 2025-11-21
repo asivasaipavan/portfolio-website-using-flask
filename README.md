@@ -13,7 +13,8 @@ Shows education, skills, projects, internship experience, certifications, and co
 
 Place these files/folders in the repository root exactly like this:
 
-'''portfolio_flask/
+```
+portfolio_flask/
 ├── app.py
 ├── messages.txt
 ├── README.md
@@ -26,4 +27,6 @@ Place these files/folders in the repository root exactly like this:
     ├── base.html
     ├── index.html
     ├── projects.html
-    └── contact.html '''
+    └── contact.html
+```
+
